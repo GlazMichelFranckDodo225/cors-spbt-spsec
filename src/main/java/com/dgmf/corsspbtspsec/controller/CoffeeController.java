@@ -2,6 +2,7 @@ package com.dgmf.corsspbtspsec.controller;
 
 import com.dgmf.corsspbtspsec.model.Coffee;
 import com.dgmf.corsspbtspsec.model.Size;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,5 +18,10 @@ public class CoffeeController {
         coffeeList.add(new Coffee(1, "Americano", Size.GRANDE));
         coffeeList.add(new Coffee(2, "Latte", Size.VENTI));
         coffeeList.add(new Coffee(3, "Caramel Macchiato", Size.TALL));
+    }
+
+    @GetMapping
+    public List<Coffee> findAll() {
+        return coffeeList;
     }
 }
