@@ -2,10 +2,7 @@ package com.dgmf.corsspbtspsec.controller;
 
 import com.dgmf.corsspbtspsec.model.Coffee;
 import com.dgmf.corsspbtspsec.model.Size;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
